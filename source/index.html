@@ -7,10 +7,9 @@
 </head>
 
 <body>
- <header class="page-header">
-  <a><img class="page-header__logo-img" src="placeholder.jpg" alt="Приложение Pink"></a>
-  <button class="page-header__nav-toggle" type="button">Меню</button>
-
+  <header class="page-header">
+    <a><img class="page-header__logo-img" src="placeholder.jpg" alt="Приложение Pink"></a>
+    <button class="page-header__nav-toggle" type="button">Меню</button>
     <nav class="main-nav">
       <ul class="main-nav__list links-list">
         <li class="links-list__item">
@@ -71,7 +70,26 @@
     </section>
     <section class="user-reviews">
       <h2 class="visually-hidden">Отзывы пользователей</h2>
-      <ul class="user-reviews__list slider"></ul>
+      <ul class="user-reviews__list slider">
+        <li class="user-reviews__item slider__item">
+          <cite class="user-reviews__user-name">Николай Петров</cite>
+          <blockquote class="user-reviews__review">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
+        </li>
+      </ul>
+      <ul class="user-reviews__toggles slider__toggles">
+        <li class="slider__toggle">
+          <button class="user-reviews__toggle" type="button">1</button>
+        </li>
+        <li class="slider__toggle">
+          <button class="user-reviews__toggle" type="button">2</button>
+        </li>
+        <li class="slider__toggle">
+          <button class="user-reviews__toggle" type="button">3</button>
+        </li>
+      </ul>
+    </section>
+    <section class="price-plan">
+      <h2 class="visually-hidden">Тарифные планы</h2>
     </section>
   </main>
 </body>
