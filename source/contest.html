@@ -31,7 +31,7 @@
     <section class="page-description">
       <h1 class=page-description__header>Конкурс на самое безбашенное путешествие с Пинк</h1>
     </section>
-    <sectin class="contest-form">
+    <section class="contest-form">
       <h2 class="visually-hidden">Анкета участника конкурса</h2>
       <p class="contest-form__promotext">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
       <form action="https://echo.htmlacademy.ru" method="get">
@@ -60,9 +60,9 @@
         </fieldset>
         <fieldset class="contest-form__user-contacts-fieldset">
           <label class="contest-form__text-label" for="user-phone">Номер телефона</label>
-          <input class="contest-form__text-input" type="text" id="user-phone" placeholder="Номер, пожалуйста">
+          <input class="contest-form__text-input" type="phone" name="user-phone" id="user-phone" placeholder="Номер, пожалуйста">
           <label class="contest-form__text-label" for="user-email">Адрес почты</label>
-          <input class="contest-form__text-input" id="user-email" placeholder="Введите почту *" required>
+          <input class="contest-form__text-input" type="email" name="user-email" id="user-email" placeholder="Введите почту *" required>
         </fieldset>
         <fieldset class="contest-form__user-platform">
           <legend class="contest-form__legend">С каким приложением путешествовали?</legend>
@@ -75,11 +75,11 @@
         </fieldset>
         <fieldset class="contest-form__user-experience">
           <legend class="contest-form__legend">Опишите свои эмоции</legend>
-          <input class="contest_form__text-area" type="textarea" placeholder="Можно прям в красках, не стесняясь в выражениях" id="user-experience" name="user-experience"></input>
+          <textarea class="contest_form__text-area" type="textarea" placeholder="Можно прям в красках, не стесняясь в выражениях" id="user-experience" name="user-experience"></textarea>
         </fieldset>
         <button type="submit">Отправить форму</button>
       </form>
-    </sectin>
+    </section>
   </main>
 </body>
 
