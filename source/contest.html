@@ -29,8 +29,38 @@
   </header>
   <main>
     <section class="page-description">
-      <h1 class="page-description__header">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <h1 class=page-description__header>Конкурс на самое безбашенное путешествие с Пинк</h1>
     </section>
+    <sectin class="contest-form">
+      <h2 class="visually-hidden">Анкета участника конкурса</h2>
+      <p class="contest-form__promotext">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <fieldset class="contest-form__user-data-fieldset">
+          <label class="contest-form__text-label" for="user-second-name">Фамилия</label>
+          <input class="contest-form__text-input" type="text" name="user-second-name" id="user-second-name" placeholder="Укажите фамилию *" required>
+          <label class="contest-form__text-label" for="user-name">Имя</label>
+          <input class="contest-form__text-input" type="text" name="user-name" id="user-name" placeholder="Введите ваше имя *" required>
+          <label class="contest-form__text-label" for="user-middle-name">Отчество</label>
+          <input class="contest-form__text-input" type="text" name="user-middle-name" id="user-middle-name" placeholder="Ну и отчество тоже">
+        </fieldset>
+        <fieldset class="contest-form__achievment-fieldset">
+          <legend>Ваши безбашенные достижения в путешествии</legend>
+          <input class="contest-form__checkbox" type="checkbox" id="shark-selfie" name="shark-selfie">
+          <label class="contest-form__checkbox-label" for="shark-selfie">Сделал селфи с акулой</label>
+          <input class="contest-form__checkbox" type="checkbox" id="beach-burn" name="beach-burn">
+          <label class="contest-form__checkbox-label" for="beach-burn">Обгорел на пляже</label>
+          <input class="contest-form__checkbox" type="checkbox" id="chack-norris" name="chack-norris">
+          <label class="contest-form__checkbox-label" for="chack-norris">Видел Чака Норриса</label>
+          <input class="contest-form__checkbox" type="checkbox" id="souvenirs" name="souvenirs">
+          <label class="contest-form__checkbox-label" for="souvenirs">Накупил сувениров</label>
+          <input class="contest-form__checkbox" type="checkbox" id="tower-hold" name="tower-hold">
+          <label class="contest-form__checkbox-label" for="tower-hold">Удержал башню</label>
+          <input class="contest-form__checkbox" type="checkbox" id="hotel-defeat" name="hotel-defeat">
+          <label class="contest-form__checkbox-label" for="hotel-defeat">Разгромил отель</label>
+        </fieldset>
+        <button type="submit">Отправить форму</button>
+      </form>
+    </sectin>
   </main>
 </body>
 
