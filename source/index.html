@@ -7,10 +7,9 @@
 </head>
 
 <body>
- <header class="page-header">
-  <a><img class="page-header__logo-img" src="placeholder.jpg" alt="Приложение Pink"></a>
-  <button class="page-header__nav-toggle" type="button">Меню</button>
-
+  <header class="page-header">
+    <a><img class="page-header__logo-img" src="placeholder.jpg" width="75" height="22" alt="Приложение Pink"></a>
+    <button class="page-header__nav-toggle" type="button">Меню</button>
     <nav class="main-nav">
       <ul class="main-nav__list links-list">
         <li class="links-list__item">
@@ -30,7 +29,8 @@
   </header>
   <main>
     <section class="page-description">
-      <img class="page-description__img" src=placeholder.jpg alt="Превью приложения Pink">
+      <img
+ class="page-description__img" src=placeholder.jpg width="498" height="314" alt="Превью приложения Pink">
       <h1 class="page-description__header visually-hidden">Приложение Pink</h1>
     </section>
     <section class="download-app">
@@ -50,10 +50,8 @@
     </section>
     <section class="promo-features">
       <h2 class="visually-hidden">Преимущества приложения</h2>
-      <div class="promo-features__header">
-        <span>Устали от серости мегаполиса?</span>
-        <span>Нам есть, что вам предложить!</span>
-      </div>
+      <span class="advice-to-user">Устали от серости мегаполиса?</span>
+      <span class="advice-to-user">Нам есть, что вам предложить!</span>
       <ul class="promo-features__list">
         <li class="promo-features__item promo-item">
           <h3 class="promo-item__header">Поднимает настроение</h3>
@@ -71,7 +69,63 @@
     </section>
     <section class="user-reviews">
       <h2 class="visually-hidden">Отзывы пользователей</h2>
-      <ul class="user-reviews__list slider"></ul>
+      <ul class="user-reviews__list slider">
+        <li class="user-reviews__item slider__item">
+          <cite class="user-reviews__user-name">Николай Петров</cite>
+          <blockquote class="user-reviews__review">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
+        </li>
+      </ul>
+      <ul class="user-reviews__toggles slider__toggles">
+        <li class="slider__toggle">
+          <button class="user-reviews__toggle" type="button">1</button>
+        </li>
+        <li class="slider__toggle">
+          <button class="user-reviews__toggle" type="button">2</button>
+        </li>
+        <li class="slider__toggle">
+          <button class="user-reviews__toggle" type="button">3</button>
+        </li>
+      </ul>
+    </section>
+    <section class="price-plan">
+      <h2 class="visually-hidden">Тарифные планы</h2>
+      <ul class="price-plan__list slider">
+        <li class="price-plan__item slider_item">
+          <div class="price-plan__type">
+            <span class="price-plan__name">Стандарт</span>
+            <span class="price-plan__price">3,99 USD</span>
+          </div>
+          <ul class="price-plan__features-list">
+            <li class="price-plan__feature price-plan__feature--included">Розовый фильтр</li>
+            <li class="price-plan__feature price-plan__feature--included">Смайлики</li>
+            <li class="price-plan__feature price-plan__feature--not-included">Комменарии</li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="price-plan__toggles slider__toggles">
+        <li class="slide__toggle">
+          <button class="price-plan__toggle" type="button">1</button>
+        </li>
+        <li class="slide__toggle">
+          <button class="price-plan__toggle" type="button">2</button>
+        </li>
+        <li class="slide__toggle">
+          <button class="price-plan__toggle" type="button">3</button>
+        </li>
+      </ul>
+    </section>
+    <section class=contact-block>
+      <h2 class="visually-hidden">Блок контактов</h2>
+      <p class="advice-to-user">Остались вопросы? Свяжитесь с нами!</p>
+      <span class="contact-block__contact-type">Звоните:</span>
+      <a class="contact-block__contact-info" href="tel:+78125556666">+7 (812) 555-66-66</a>
+      <span class="contact-block__contact-type">Пишите:</span>
+      <a class="contact-block__contact-info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      <span class="contact-block__contact-type">Приезжайте в гости:</span>
+      <a class="contact-block__contact-info" href="https://yandex.ru/maps/-/CGTW7Ok-">ул. Большая Конюшенная, 19/8</a>
+      <div class="contact-block__map">
+        <iframe src="https://yandex.ru/map-widget/v1/-/CGTW7Ok-" width="320" height="190"></iframe>
+      </div>
     </section>
   </main>
 </body>

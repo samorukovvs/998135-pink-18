@@ -8,7 +8,7 @@
 
 <body>
   <header class="page-header">
-    <a><img class="page-header__logo-img" src="placeholder.jpg" alt="Приложение Pink"></a>
+    <a><img class="page-header__logo-img" width="74" height="23" src="placeholder.jpg" alt="Приложение Pink"></a>
     <button class="page-header__nav-toggle" type="button">Меню</button>
     <nav class="main-nav">
       <ul class="main-nav__list links-list">
@@ -29,9 +29,75 @@
   </header>
   <main>
     <section class="page-description">
-      <h1 class="page-description__header">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <h1 class=page-description__header>Конкурс на самое безбашенное путешествие с Пинк</h1>
+    </section>
+    <section class="contest-form">
+      <h2 class="visually-hidden">Анкета участника конкурса</h2>
+      <p class="contest-form__promotext">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <fieldset class="contest-form__user-data-fieldset">
+          <label class="contest-form__text-label" for="user-second-name">Фамилия</label>
+          <input class="contest-form__text-input" type="text" name="user-second-name" id="user-second-name" placeholder="Укажите фамилию *" required>
+          <label class="contest-form__text-label" for="user-name">Имя</label>
+          <input class="contest-form__text-input" type="text" name="user-name" id="user-name" placeholder="Введите ваше имя *" required>
+          <label class="contest-form__text-label" for="user-middle-name">Отчество</label>
+          <input class="contest-form__text-input" type="text" name="user-middle-name" id="user-middle-name" placeholder="Ну и отчество тоже">
+        </fieldset>
+        <fieldset class="contest-form__achievment-fieldset">
+          <legend class="contest-form__legend">Ваши безбашенные достижения в путешествии</legend>
+          <input class="contest-form__checkbox" type="checkbox" id="shark-selfie" name="shark-selfie">
+          <label class="contest-form__checkbox-label" for="shark-selfie">Сделал селфи с акулой</label>
+          <input class="contest-form__checkbox" type="checkbox" id="beach-burn" name="beach-burn">
+          <label class="contest-form__checkbox-label" for="beach-burn">Обгорел на пляже</label>
+          <input class="contest-form__checkbox" type="checkbox" id="chack-norris" name="chack-norris">
+          <label class="contest-form__checkbox-label" for="chack-norris">Видел Чака Норриса</label>
+          <input class="contest-form__checkbox" type="checkbox" id="souvenirs" name="souvenirs">
+          <label class="contest-form__checkbox-label" for="souvenirs">Накупил сувениров</label>
+          <input class="contest-form__checkbox" type="checkbox" id="tower-hold" name="tower-hold">
+          <label class="contest-form__checkbox-label" for="tower-hold">Удержал башню</label>
+          <input class="contest-form__checkbox" type="checkbox" id="hotel-defeat" name="hotel-defeat">
+          <label class="contest-form__checkbox-label" for="hotel-defeat">Разгромил отель</label>
+        </fieldset>
+        <fieldset class="contest-form__user-contacts-fieldset">
+          <label class="contest-form__text-label" for="user-phone">Номер телефона</label>
+          <input class="contest-form__text-input" type="tel" name="user-phone" id="user-phone" placeholder="Номер, пожалуйста">
+          <label class="contest-form__text-label" for="user-email">Адрес почты</label>
+          <input class="contest-form__text-input" type="email" name="user-email" id="user-email" placeholder="Введите почту *" required>
+        </fieldset>
+        <fieldset class="contest-form__user-platform">
+          <legend class="contest-form__legend">С каким приложением путешествовали?</legend>
+          <input class="contest-form__radio-input" type="radio" id="user-platform-ios" name="user-platform" value="ios" checked>
+          <label class="contest-form__text-label" for="user-platform-android">Pink для iOS</label>
+          <input class="contest-form__radio-input" type="radio" id="user-platform-android" name="user-platform" value="android">
+          <label class="contest-form__text-label" for="user-platform-winphone">Pink на Android</label>
+          <input class="contest-form__radio-input" type="radio" id="user-platform-winphone" name="user-platform" value="windows-phone">
+          <label class="contest-form__text-label" for="user-platform-winphone">Windows Phone</label>
+        </fieldset>
+        <fieldset class="contest-form__user-experience">
+          <legend class="contest-form__legend">Опишите свои эмоции</legend>
+          <textarea class="contest_form__text-area" placeholder="Можно прям в красках, не стесняясь в выражениях" id="user-experience" name="user-experience"></textarea>
+        </fieldset>
+        <button type="submit">Отправить форму</button>
+        <span class="contest-form__note">* — обязательные поля</span>
+      </form>
     </section>
   </main>
+  <footer>
+    <img class="footer__logo" src="placeholder.jpg" width="146" height="40" alt="Пинк">
+    <ul class="social-links-list">
+      <li class="social-links-list__item social-links-list__item--twitter">
+        <a href="twitter.com" aria-label="Страница Пинк в Твиттере"></a>
+      </li>
+      <li class="social-links-list__item social-links-list__item--facebook">
+        <a href="twitter.com" aria-label="Страница Пинк в Фэйсбуке"></a>
+      </li>
+      <li class="social-links-list__item social-links-list__item--youtube">
+        <a href="twitter.com" aria-label="Страница Пинк в Ютуб"></a>
+      </li>
+    </ul>
+    <span class="footer__developer">Разработано</span>
+    <a class="footer__developer-logo" href="https://htmlacademy.ru/intensive/adaptive"></a>
+  </footer>
 </body>
 
 </html>
