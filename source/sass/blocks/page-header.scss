@@ -1,0 +1,15 @@
+.page-header {
+  background-color: $navigation;
+  padding-left: 20px;
+  padding-right: 19px;
+  padding-top: 22px;
+}
+
+.page-header__nav-toggle {
+  background-image: url('../img/icon-menu-cross.svg');
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 23px;
+  background-color: transparent;
+  border: none;
+}

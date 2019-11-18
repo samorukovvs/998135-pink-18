@@ -1,0 +1,26 @@
+.promo-features {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.promo-features__list {
+  background-color: #f2f2f2;
+  list-style: none;
+  padding-right: 30px;
+  padding-left: 30px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.promo-features ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.promo-features__image {
+  margin-bottom: -40px;
+  margin-left: auto;
+  margin-right: auto;
+}
