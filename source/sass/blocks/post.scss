@@ -1,0 +1,50 @@
+.post {
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  text-align: left;
+  color: $navigation;
+}
+
+.post__user {
+  font-weight: bold;
+}
+
+.post__publish-time {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.post__description {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.post__meta {
+  padding-left: $padding;
+  padding-right: $padding;
+  background-color: $light-grey;
+}
+
+.post__like-count {
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-align: left;
+  color: $lipstick;
+}
+
+.post__like-button {
+  background-image: url('../img/icon-heart.svg');
+  width: 13px;
+  height: 12px;
+  border: none;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}

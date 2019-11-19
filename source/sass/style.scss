@@ -1,5 +1,6 @@
 @import 'normalize.scss';
 @import 'colors.scss';
+@import 'sizes.scss';
 @import 'blocks/page-header.scss';
 @import 'blocks/links-list.scss';
 @import 'blocks/page-description.scss';
@@ -8,6 +9,11 @@
 @import 'blocks/promo-features.scss';
 @import 'blocks/advice-to-user.scss';
 @import 'blocks/promo-item.scss';
+@import 'blocks/promo-text.scss';
+@import 'blocks/photo-feed.scss';
+@import 'blocks/post.scss';
+@import 'blocks/social-link-list.scss';
+@import 'blocks/footer.scss';
 
 @font-face {
   font-family: 'OpenSans';
@@ -32,6 +38,7 @@
 
 body {
   font-family: OpenSans, Arial, sans-serif;
+  width: 320px;
 }
 
 .visually-hidden {
