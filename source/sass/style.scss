@@ -1,7 +1,7 @@
 @import "colors.scss";
 @import "common.scss";
 @import "fonts.scss";
-@import "../../node_modules/normalize.scss";
+@import "../../node_modules/normalize.scss/normalize.scss";
 @import "sizes.scss";
 @import "blocks/page-header.scss";
 @import "blocks/links-list.scss";
@@ -16,3 +16,5 @@
 @import "blocks/post.scss";
 @import "blocks/social-link-list.scss";
 @import "blocks/visually-hidden.scss";
+@import "blocks/container.scss"
+
