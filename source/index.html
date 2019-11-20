@@ -4,12 +4,13 @@
 <head>
   <meta charset="utf-8">
   <title>Пинк-главная</title>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 
 <body>
   <header class="page-header">
-    <a><img class="page-header__logo-img" src="placeholder.jpg" width="75" height="22" alt="Приложение Pink"></a>
-    <button class="page-header__nav-toggle" type="button">Меню</button>
+    <a><img class="page-header__logo-img" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Приложение Pink"></a>
+    <button class="page-header__nav-toggle" type="button" aria-label="Меню"></button>
     <nav class="main-nav">
       <ul class="main-nav__list links-list">
         <li class="links-list__item">
@@ -29,13 +30,13 @@
   </header>
   <main>
     <section class="page-description">
-      <img
- class="page-description__img" src=placeholder.jpg width="498" height="314" alt="Превью приложения Pink">
-      <h1 class="page-description__header visually-hidden">Приложение Pink</h1>
+      <span class="page-description__header">Взгляните на жизнь иначе!</span>
+      <img class="page-description__img" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="Превью приложения Pink">
+      <h1 class="visually-hidden">Приложение Pink</h1>
     </section>
     <section class="download-app">
       <h2 class="visually-hidden">Скачать и установить приложение</h2>
-      <a class="download-app__download-button button" href="https://www.apple.com/ru/ios/app-store/"></a>
+      <a class="download-app__download-button button" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
       <ul class="download-app__download-list">
         <li>
           <a class="download-app__link download-app__link--appstore" href="https://www.apple.com/ru/ios/app-store/" aria-label="Скачать из app-store"></a>
@@ -44,28 +45,31 @@
           <a class="download-app__link download-app__link--play-market" href="play.google.com" aria-label="Скачать из Play market"></a>
         </li>
         <li>
-          <a class="download-app__link download-app__link--appstore" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone?icid=CNavAppsWindowsPhoneApps" aria-label="Скачать из Windows store"></a>
+          <a class="download-app__link download-app__link--windows-store" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone?icid=CNavAppsWindowsPhoneApps" aria-label="Скачать из Windows store"></a>
         </li>
       </ul>
+      <span class="download-app__platform-available">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</span>
     </section>
     <section class="promo-features">
       <h2 class="visually-hidden">Преимущества приложения</h2>
       <span class="advice-to-user">Устали от серости мегаполиса?</span>
       <span class="advice-to-user">Нам есть, что вам предложить!</span>
-      <ul class="promo-features__list">
-        <li class="promo-features__item promo-item">
-          <h3 class="promo-item__header">Поднимает настроение</h3>
-          <p class="promo-item__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-        </li>
-        <li class="promo-features__item promo-item">
-          <h3 class="promo-item__header">Меняет мир вокруг</h3>
-          <p class="promo-item__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-        </li>
-        <li class="promo-features__item promo-item">
-          <h3 class="promo-item__header">Заводит новых друзей</h3>
-          <p class="promo-item__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-        </li>
-      </ul>
+      <div class="promo-features__list">
+        <ul>
+          <li class="promo-features__item promo-item">
+            <h3 class="promo-item__header">Поднимает настроение</h3>
+            <p class="promo-item__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="promo-features__item promo-item">
+            <h3 class="promo-item__header">Меняет мир вокруг</h3>
+            <p class="promo-item__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="promo-features__item promo-item">
+            <h3 class="promo-item__header">Заводит новых друзей</h3>
+            <p class="promo-item__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="user-reviews">
       <h2 class="visually-hidden">Отзывы пользователей</h2>

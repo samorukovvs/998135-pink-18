@@ -4,12 +4,13 @@
 <head>
   <meta charset="utf-8">
   <title>Пинк-Конкурс</title>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 
 <body>
   <header class="page-header">
-    <a><img class="page-header__logo-img" width="74" height="23" src="placeholder.jpg" alt="Приложение Pink"></a>
-    <button class="page-header__nav-toggle" type="button">Меню</button>
+    <a><img class="page-header__logo-img" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Приложение Pink"></a>
+    <button class="page-header__nav-toggle" type="button" aria-label="Меню"></button>
     <nav class="main-nav">
       <ul class="main-nav__list links-list">
         <li class="links-list__item">
@@ -29,7 +30,8 @@
   </header>
   <main>
     <section class="page-description">
-      <h1 class=page-description__header>Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <h1 class="visually-hidden">Конкурс Pink</h1>
+      <span class="page-description__header">Конкурс на самое безбашенное путешествие с Пинк</span>
     </section>
     <section class="contest-form">
       <h2 class="visually-hidden">Анкета участника конкурса</h2>
@@ -83,7 +85,8 @@
     </section>
   </main>
   <footer>
-    <img class="footer__logo" src="placeholder.jpg" width="146" height="40" alt="Пинк">
+
+    <img class="footer__logo" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Пинк">
     <ul class="social-links-list">
       <li class="social-links-list__item social-links-list__item--twitter">
         <a href="twitter.com" aria-label="Страница Пинк в Твиттере"></a>
@@ -96,7 +99,7 @@
       </li>
     </ul>
     <span class="footer__developer">Разработано</span>
-    <a class="footer__developer-logo" href="https://htmlacademy.ru/intensive/adaptive"></a>
+    <a class="footer__developer-logo" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/logo-htmlacademy.svg" alt="HTMLAcademy" width="27" height="24"></a>
   </footer>
 </body>
 

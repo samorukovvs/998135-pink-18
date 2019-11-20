@@ -1,0 +1,18 @@
+.page-description {
+  min-height: 170px;
+  padding-top: 29px;
+  padding-right: 50px;
+  padding-left: 50px;
+
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+}
+
+.page-description__header {
+  display: block;
+
+  font-weight: 300;
+  font-size: 24px;
+  text-align: center;
+  color: $white;
+}
