@@ -1,50 +1,18 @@
-@import 'normalize.scss';
-@import 'colors.scss';
-@import 'sizes.scss';
-@import 'blocks/page-header.scss';
-@import 'blocks/links-list.scss';
-@import 'blocks/page-description.scss';
-@import 'blocks/download-app.scss';
-@import 'blocks/button.scss';
-@import 'blocks/promo-features.scss';
-@import 'blocks/advice-to-user.scss';
-@import 'blocks/promo-item.scss';
-@import 'blocks/promo-text.scss';
-@import 'blocks/photo-feed.scss';
-@import 'blocks/post.scss';
-@import 'blocks/social-link-list.scss';
-@import 'blocks/footer.scss';
-
-@font-face {
-  font-family: 'OpenSans';
-  src: url('../fonts/opensans.woff'), url('../fonts/opensans.woff2');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'OpenSans';
-  src: url('../fonts/opensansbold.woff'), url('../fonts/opensansbold.woff2');
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'OpenSans';
-  src: url('../fonts/opensanslight.woff'), url('../fonts/opensanslight.woff2');
-  font-weight: light;
-  font-style: normal;
-}
-
-body {
-  font-family: OpenSans, Arial, sans-serif;
-  width: 320px;
-}
-
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
+@import "colors.scss";
+@import "common.scss";
+@import "fonts.scss";
+@import "../../node_modules/normalize.scss";
+@import "sizes.scss";
+@import "blocks/page-header.scss";
+@import "blocks/links-list.scss";
+@import "blocks/page-description.scss";
+@import "blocks/download-app.scss";
+@import "blocks/button.scss";
+@import "blocks/promo-features.scss";
+@import "blocks/advice-to-user.scss";
+@import "blocks/promo-item.scss";
+@import "blocks/promo-text.scss";
+@import "blocks/photo-feed.scss";
+@import "blocks/post.scss";
+@import "blocks/social-link-list.scss";
+@import "blocks/visually-hidden.scss";

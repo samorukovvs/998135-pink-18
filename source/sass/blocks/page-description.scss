@@ -1,20 +1,18 @@
 .page-description {
-  padding-left: 50px;
-  padding-right: 50px;
+  min-height: 170px;
   padding-top: 29px;
-  background-image: url('../img/bg-back-mobile@1x.jpg');
+  padding-right: 50px;
+  padding-left: 50px;
+
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  min-height: 170px
 }
 
 .page-description__header {
-  font-size: 24px;
+  display: block;
+
   font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
+  font-size: 24px;
   text-align: center;
   color: $white;
-  display: block;
 }

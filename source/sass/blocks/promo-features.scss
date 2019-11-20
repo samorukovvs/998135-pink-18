@@ -4,23 +4,26 @@
 }
 
 .promo-features__list {
-  background-color: #f2f2f2;
-  list-style: none;
+  display: flex;
+  flex-direction: column;
   padding-right: 30px;
   padding-left: 30px;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
+
+  list-style: none;
+
+  background-color: #f2f2f2;
 }
 
 .promo-features ul {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
-  margin: 0px;
-  padding: 0px;
 }
 
 .promo-features__image {
+  margin-right: auto;
   margin-bottom: -40px;
   margin-left: auto;
-  margin-right: auto;
 }

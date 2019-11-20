@@ -1,11 +1,8 @@
 .advice-to-user {
-  font-size: 24px;
-  font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: $navigation;
   display: block;
+
+  font-weight: 300;
+  font-size: 24px;
+  text-align: center;
+  color: $dark-main;
 }
