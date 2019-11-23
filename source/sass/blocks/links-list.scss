@@ -21,3 +21,12 @@
 
   background-color: $dark-main;
 }
+
+@media (min-width: $desktop-width) {
+  .links-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+}

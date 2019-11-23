@@ -11,3 +11,32 @@
   background-repeat: no-repeat;
   border: none;
 }
+
+@media (min-width: $mobile-width) {
+  .page-header__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+    .page-header {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .page-header__nav-toggle {
+      display: none;
+    }
+
+    .page-header {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .page-header__top {
+      width: auto;
+    }
+  }
+}
