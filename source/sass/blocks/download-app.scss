@@ -10,7 +10,7 @@
 .download-app__download-list {
   display: flex;
 
-  list-style: none;
+  @include reset-list;
 }
 
 .download-app__link {
@@ -46,4 +46,22 @@
   line-height: 1.71;
   text-align: center;
   color: $white;
+}
+
+@media (min-width: $mobile-width) {
+  .download-app__container {
+    width: $mobile-width;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .download-app {
+    margin-top: 38px;
+
+    background-color: transparent;
+  }
+
+  .download-app__container {
+    width: 300px;
+  }
 }

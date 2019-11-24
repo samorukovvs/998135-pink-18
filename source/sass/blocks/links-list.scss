@@ -21,6 +21,11 @@
 
   background-color: $dark-main;
 }
+@media (min-width: $tablet-width) {
+  .links-list__item {
+    min-height: 63px;
+  }
+}
 
 @media (min-width: $desktop-width) {
   .links-list {

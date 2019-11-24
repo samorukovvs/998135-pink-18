@@ -1,0 +1,14 @@
+@media (min-width: $mobile-width) {
+  .description-download {
+    width: $mobile-width;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .description-download {
+    width: $tablet-width;
+    min-height: 619px;
+
+    background-image: url("../../img/bg-back-tablet@1x.jpg");
+  }
+}

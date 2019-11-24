@@ -1,8 +1,19 @@
-.advice-to-user {
-  display: block;
+@media (min-width: $mobile-width) {
+  .advice-to-user {
+    display: block;
 
-  font-weight: 300;
-  font-size: 24px;
-  text-align: center;
-  color: $dark-main;
+    font-weight: 300;
+    font-size: 24px;
+    text-align: center;
+    color: $dark-main;
+  }
 }
+
+@media (min-width: $tablet-width) {
+  .advice-to-user {
+    font-weight: 300;
+    font-size: 40px;
+    text-align: center;
+  }
+}
+
