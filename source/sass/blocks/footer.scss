@@ -1,12 +1,10 @@
 .footer {
   box-sizing: border-box;
 }
-
-@media (min-width: $mobile-width) {
-  .footer--main {
-    display: none;
-  }
+.footer--main {
+  display: none;
 }
+
 
 @media (min-width: $tablet-width) {
   .footer {

@@ -1,13 +1,12 @@
-@media (min-width: $mobile-width) {
-  .advice-to-user {
-    display: block;
+.advice-to-user {
+  display: block;
 
-    font-weight: 300;
-    font-size: 24px;
-    text-align: center;
-    color: $dark;
-  }
+  font-weight: 300;
+  font-size: 24px;
+  text-align: center;
+  color: $dark;
 }
+
 
 @media (min-width: $tablet-width) {
   .advice-to-user {

@@ -1,8 +1,7 @@
-@media (min-width: $mobile-width) {
-  .description-download {
-    background-image: url('../../img/bg-back-mobile@1x.jpg');
-  }
+.description-download {
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
 }
+
 
 @media (min-width: $tablet-width) {
   .description-download {

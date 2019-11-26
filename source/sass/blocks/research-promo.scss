@@ -1,11 +1,9 @@
 .research-promo__container {
+  @include visually-hidden;
+
   box-sizing: border-box;
 }
-@media (min-width: $mobile-width) {
-  .research-promo__container {
-    @include visually-hidden;
-  }
-}
+
 
 @media (min-width: $tablet-width) {
   .research-promo__container {

@@ -1,24 +1,18 @@
 .page-description {
   box-sizing: border-box;
+  min-height: 170px;
 
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
 }
 
-@media (min-width: $mobile-width) {
-  .page-description {
-    min-height: 170px;
+.page-description__header {
+  display: block;
 
-    background-image: url("../img/bg-back-mobile@1x.jpg");
-  }
-
-  .page-description__header {
-    display: block;
-
-    font-weight: 300;
-    font-size: 24px;
-    text-align: center;
-    color: $white;
-  }
+  font-weight: 300;
+  font-size: 24px;
+  text-align: center;
+  color: $white;
 }
 
 @media (min-width: $tablet-width) {
@@ -31,6 +25,7 @@
   .page-description {
     background-image: url("../../img/bg-back-tablet@1x.jpg");
   }
+
   .page-description__header {
     width: 186px;
     height: 126px;
