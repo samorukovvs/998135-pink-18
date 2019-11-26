@@ -4,6 +4,8 @@
   margin: auto;
 
   list-style: none;
+
+  @include reset-list;
 }
 
 .links-list__item {
@@ -19,12 +21,7 @@
   text-transform: uppercase;
   text-decoration: none;
 
-  background-color: $dark-main;
-}
-@media (min-width: $tablet-width) {
-  .links-list__item {
-    min-height: 63px;
-  }
+  background-color: $dark;
 }
 
 @media (min-width: $desktop-width) {

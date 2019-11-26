@@ -1,0 +1,37 @@
+.research-promo__container {
+  box-sizing: border-box;
+}
+@media (min-width: $mobile-width) {
+  .research-promo__container {
+    @include visually-hidden;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .research-promo__container {
+    display: block;
+    width: $tablet-width;
+    padding-top: 103px;
+    padding-bottom: 103px;
+    padding-left: 329px;
+  }
+
+  .research-promo__header {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    color: $black-two;
+  }
+
+  .research-promo__text {
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
+    color: $dark;
+  }
+
+  .research-promo__link {
+    font-size: 14px;
+    color: $lipstick;
+  }
+}

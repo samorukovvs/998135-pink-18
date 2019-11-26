@@ -1,0 +1,20 @@
+.footer {
+  box-sizing: border-box;
+}
+
+@media (min-width: $mobile-width) {
+  .footer--main {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: $tablet-width;
+    min-height: 127px;
+    padding-top: 47px;
+  }
+}

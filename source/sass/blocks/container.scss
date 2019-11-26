@@ -4,21 +4,25 @@
 
 @media (min-width: $mobile-width) {
   .container {
-    width: $mobile-width;
-    padding-right: 20px;
-    padding-left: 20px;
+    width: $mobile-container-width;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
 @media (min-width: $tablet-width) {
   .container {
-    width: $tablet-width;
+    width: $tablet-container-width;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
 
 @media (min-width: $desktop-width) {
   .container {
-    width: $desktop-width;
+    width: $desktop-container-width;
+    margin-right: auto;
+    margin-left: auto;
   }
 }

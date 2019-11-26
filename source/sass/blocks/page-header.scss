@@ -1,5 +1,9 @@
 .page-header {
-  background-color: $dark-main;
+  display: flex;
+  align-items: center;
+  min-height: 110px;
+
+  background-color: $dark;
 }
 
 .page-header__nav-toggle {
@@ -18,9 +22,8 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    min-height: 110px;
 
-    .page-header {
+    .page-header__container {
       display: flex;
       flex-direction: column;
     }
@@ -31,7 +34,7 @@
       display: none;
     }
 
-    .page-header {
+    .page-header__container {
       display: flex;
       flex-direction: row;
     }
