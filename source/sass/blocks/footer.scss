@@ -1,8 +1,12 @@
-.footer {
-  box-sizing: border-box;
+.footer--main {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
+  .footer--main {
+    display: block;
+  }
+
   .footer__container {
     @include container;
 
