@@ -1,0 +1,31 @@
+.contact-block__list {
+  @include reset-list;
+}
+
+.contact-block__contact-type {
+  display: block;
+
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  color: $dark;
+}
+
+.contact-block__contact-info {
+  display: block;
+
+  font-weight: 300;
+  font-size: 24px;
+  text-align: center;
+  color: $lipstick;
+  text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .contact-block__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
