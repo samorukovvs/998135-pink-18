@@ -1,4 +1,5 @@
 .download-app {
+  display: flex;
   padding-top: 28px;
   padding-bottom: 35px;
 
@@ -6,11 +7,11 @@
 }
 
 .download-app__container {
+  @include container;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 281px;
-  margin: 0 auto;
 }
 
 .download-app__download-list {
@@ -58,20 +59,20 @@
 
 @media (min-width: $tablet-width) {
   .download-app {
-    width: 300px;
     margin-top: 38px;
 
     background-color: transparent;
-  }
-
-  .download-app__container {
-    width: 300px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .download-app {
     padding-left: 130px;
+  }
+
+  .download-app__container {
+    width: 300px;
+    margin-left: 0;
   }
 
   .download-app__download-button {

@@ -7,6 +7,7 @@
 }
 
 .page-header__nav-toggle {
+  display: none;
   width: 24px;
   height: 23px;
 
@@ -21,25 +22,28 @@
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
+}
+.page-header__container {
+  @include container;
 
-  .page-header__container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+}
+
+
+@media (min-width: $desktop-width) {
+  .page-header__nav-toggle {
+    display: none;
   }
 
+  .page-header__container {
+    @include container;
 
-  @media (min-width: $desktop-width) {
-    .page-header__nav-toggle {
-      display: none;
-    }
+    display: flex;
+    flex-direction: row;
+  }
 
-    .page-header__container {
-      display: flex;
-      flex-direction: row;
-    }
-
-    .page-header__top {
-      width: auto;
-    }
+  .page-header__top {
+    width: auto;
   }
 }

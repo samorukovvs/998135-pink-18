@@ -9,38 +9,48 @@
 
 <body>
   <header class="page-header">
-    <a><img class="page-header__logo-img" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Приложение Pink"></a>
-    <button class="page-header__nav-toggle" type="button" aria-label="Меню"></button>
-    <nav class="main-nav">
-      <ul class="main-nav__list links-list">
-        <li class="links-list__item">
-          <a href="index.html">Главная</a>
-        </li>
-        <li class="links-list__item">
-          <a>Фотографии</a>
-        </li>
-        <li class="links-list__item">
-          <a href="contest.html">Конкурс</a>
-        </li>
-        <li class="links-list__item">
-          <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="page-header__container">
+      <div class="page-header__top">
+        <a><img class="page-header__logo-img" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Приложение Pink"></a>
+        <button class="page-header__nav-toggle" type="button" aria-label="Меню"></button>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav__list links-list">
+          <li class="links-list__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="links-list__item">
+            <a>Фотографии</a>
+          </li>
+          <li class="links-list__item">
+            <a href="contest.html">Конкурс</a>
+          </li>
+          <li class="links-list__item">
+            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main>
     <section class="page-description">
-      <h1 class="page-description__header">Фотографии пользователей</h1>
+      <div class="container">
+        <h1 class="page-description__header">Фотографии пользователей</h1>
+      </div>
     </section>
     <section class="photo-feed">
       <h2 class="visually-hidden">Лента фотографий</h2>
+
       <p class="photo-feed__promo-text promo-text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+
       <ul class="photo-feed__list">
         <li class="post post--pan-of-a-day">
-          <a href="full-size.jpg">
-            <img class="post__img post__img--pan" alt="Фотография поста" width="320" height="137" src="img/panorama-mobile@1x.jpg">
+          <a href="full-size.jpg"></a>
+            <img class="post__img post__img--mobile post__img--pan" alt="Фотография поста" width="320" height="137" src="img/panorama-mobile@1x.jpg">
+            <img class="post__img post__img--tablet post__img--pan" alt="Фотография поста" width="660" height="509" src="img/panorama-tablet@1x.jpg">
+            <img class="post__img post__img--desktop post__img--pan" alt="Фотография поста" width="1200" height="506" src="img/panorama-desktop@1x.jpg">
           </a>
-          <div class="post__meta">
+          <div class="post__meta--pan-of-a-day">
             <span class="post__user">Анна</span>
             <span class="post__publish-time">(5 минут назад)</span>
             <p class="post__description">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
