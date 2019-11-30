@@ -1,8 +1,10 @@
 .social-links-list {
+  @include reset-list;
+
   display: flex;
   flex-direction: row;
-
-  list-style: none;
+  justify-content: space-between;
+  width: 178px;
 }
 
 .social-links-list__item {

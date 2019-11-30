@@ -1,8 +1,9 @@
 .photo-feed__list {
+  @include container;
   @include reset-list;
 
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  max-width: 1200px;
+  justify-content: space-between;
+  margin: 0 auto;
 }

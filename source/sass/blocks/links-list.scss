@@ -1,15 +1,17 @@
 .links-list {
+  @include reset-list;
+
   display: flex;
   flex-direction: column;
   margin: auto;
 
   list-style: none;
-
-  @include reset-list;
 }
 
 .links-list__item {
   margin: auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .links-list__item a {
