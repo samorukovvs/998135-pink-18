@@ -1,0 +1,23 @@
+.container {
+  box-sizing: border-box;
+  width: $mobile-container-width;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    width: $tablet-container-width;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: $desktop-container-width;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

@@ -1,9 +1,25 @@
 .promo-text {
-  padding-right: $padding;
-  padding-left: $padding;
+  width: 241px;
+  margin: 0 auto;
 
   font-size: 14px;
   line-height: 2.14;
   text-align: center;
-  color: $dark-main;
+  color: $dark;
+}
+
+@media (min-width: $tablet-width) {
+  .promo-text {
+    width: 436px;
+
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo-text {
+    width: 568px;
+  }
 }

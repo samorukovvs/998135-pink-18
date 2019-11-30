@@ -1,7 +1,9 @@
 .photo-feed__list {
-  margin-right: 0;
-  margin-left: 0;
-  padding: 0;
+  @include container;
+  @include reset-list;
 
-  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
 }

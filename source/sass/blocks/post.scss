@@ -1,8 +1,19 @@
 .post {
+  width: 280px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+
   font-size: 14px;
   line-height: 1.71;
   text-align: left;
-  color: $dark-main;
+  color: $dark;
+}
+
+.post__img {
+  display: block;
+  width: 280px;
+  height: 180px;
+  margin: 0 auto;
 }
 
 .post__user {
@@ -20,9 +31,6 @@
 }
 
 .post__meta {
-  padding-right: $padding;
-  padding-left: $padding;
-
   background-color: $light-grey;
 }
 
@@ -41,4 +49,67 @@
   background-image: url("../img/icon-heart.svg");
   background-repeat: no-repeat;
   border: none;
+}
+
+.post__img--tablet {
+  display: none;
+}
+
+.post__img--desktop {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .post {
+    width: 300px;
+    padding-bottom: 20px;
+
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: left;
+    color: $dark;
+  }
+
+  .post__img {
+    display: block;
+    width: 300px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .post__img--desktop {
+    display: none;
+  }
+
+  .post__img--tablet {
+    display: block;
+  }
+
+  .post__img--mobile {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .post__img--desktop {
+    display: block;
+  }
+
+  .post__img--tablet {
+    display: none;
+  }
+}
+
+.post--pan-of-a-day {
+  width: 100%;
+  margin-left: 0;
+}
+
+.post__img--pan {
+  position: relative;
+  left: 50%;
+
+  width: 100vw;
+
+  transform: translate(-50%);
 }

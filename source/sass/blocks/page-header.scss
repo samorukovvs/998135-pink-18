@@ -1,12 +1,13 @@
 .page-header {
-  padding-top: 22px;
-  padding-right: $padding;
-  padding-left: $padding;
+  display: flex;
+  align-items: center;
+  min-height: 110px;
 
-  background-color: $dark-main;
+  background-color: $dark;
 }
 
 .page-header__nav-toggle {
+  display: none;
   width: 24px;
   height: 23px;
 
@@ -14,4 +15,44 @@
   background-image: url("../img/icon-menu-cross.svg");
   background-repeat: no-repeat;
   border: none;
+}
+
+.page-header__top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.page-header__container {
+  @include container;
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    position: absolute;
+
+    width: 100%;
+
+    background-color: transparentize($dark, 0.3);
+  }
+
+  .page-header__nav-toggle {
+    display: none;
+  }
+
+  .page-header__container {
+    @include container;
+
+    display: flex;
+    flex-direction: row;
+  }
+
+  .page-header__top {
+    width: auto;
+  }
 }

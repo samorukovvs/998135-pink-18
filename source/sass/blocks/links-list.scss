@@ -1,9 +1,17 @@
 .links-list {
+  @include reset-list;
+
   display: flex;
   flex-direction: column;
   margin: auto;
 
   list-style: none;
+}
+
+.links-list__item {
+  margin: auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .links-list__item a {
@@ -15,5 +23,14 @@
   text-transform: uppercase;
   text-decoration: none;
 
-  background-color: $dark-main;
+  background-color: $dark;
+}
+
+@media (min-width: $desktop-width) {
+  .links-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
 }

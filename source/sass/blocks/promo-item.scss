@@ -1,3 +1,5 @@
+
+
 .promo-item__text {
   font-size: 14px;
   line-height: 1.71;
@@ -11,4 +13,15 @@
   line-height: 1.71;
   text-align: center;
   color: #000000;
+}
+
+
+@media (min-width: $tablet-width) {
+  .promo-item__header {
+    text-align: left;
+  }
+
+  .promo-item__text {
+    text-align: left;
+  }
 }

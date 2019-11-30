@@ -4,5 +4,22 @@
   font-weight: 300;
   font-size: 24px;
   text-align: center;
-  color: $dark-main;
+  color: $dark;
+}
+
+
+@media (min-width: $tablet-width) {
+  .advice-to-user {
+    font-weight: 300;
+    font-size: 40px;
+    text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advice-to-user {
+    font-weight: 300;
+    font-size: 50px;
+    text-align: center;
+  }
 }
