@@ -1,6 +1,10 @@
-
+.promo-item {
+  margin-top: 0;
+}
 
 .promo-item__text {
+  margin-top: 0;
+
   font-size: 14px;
   line-height: 1.71;
   text-align: center;
@@ -8,6 +12,9 @@
 }
 
 .promo-item__header {
+  margin-top: 0;
+  margin-bottom: 10px;
+
   font-weight: bold;
   font-size: 18px;
   line-height: 1.71;
