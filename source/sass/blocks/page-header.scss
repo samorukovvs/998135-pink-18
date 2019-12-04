@@ -21,24 +21,31 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  box-sizing: border-box;
   width: 100%;
+  min-height: 69px;
+  padding-top: 21px;
 }
 
 .page-header__container {
-  @include container;
-
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
+.page-header__logo-img {
+  padding-left: 20px;
+}
 
 @media (min-width: $desktop-width) {
   .page-header {
     position: absolute;
+    top: 0;
+    left: 0;
 
     width: 100%;
 
-    background-color: transparentize($dark, 0.3);
+    background-color: $black-three-30;
   }
 
   .page-header__nav-toggle {
@@ -50,6 +57,8 @@
 
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    padding-top: 13px;
   }
 
   .page-header__top {

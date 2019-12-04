@@ -1,3 +1,9 @@
 .main-nav {
   width: 100%;
 }
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    width: 620px;
+  }
+}
