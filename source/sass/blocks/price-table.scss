@@ -1,0 +1,35 @@
+.price-table__header {
+  width: 274px;
+  height: 94px;
+
+  background-color: $dark;
+  border: solid 2px $dark;
+}
+
+.price-table__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.price-table__cost {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.price-table__service {
+  width: 276px;
+  height: 59px;
+
+  font-size: 14px;
+  line-height: 30px;
+  text-align: left;
+  color: $dark;
+
+  border: solid 2px #e5e5e5;
+}
