@@ -1,5 +1,15 @@
 .page-description {
   box-sizing: border-box;
+  min-height: 170px;
+
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+.page-description--index {
+  box-sizing: border-box;
   min-height: 394px;
 
   background-image: url("../../img/iphone-hand-mobile@1x.png"), url("../../img/bg-back-mobile@1x.jpg");
@@ -21,6 +31,12 @@
 }
 
 .page-description__container {
+  @include container;
+
+  padding-top: 26px;
+}
+
+.page-description__container--main {
   @include container;
 
   padding-top: 19px;
