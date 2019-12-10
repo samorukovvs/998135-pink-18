@@ -29,6 +29,13 @@ fieldset {
   margin-bottom: 5px;
 }
 
+.contest-form__check-label {
+  font-size: 18px;
+  line-height: 1.67;
+  text-align: left;
+  color: $dark;
+}
+
 .contest-form__text-input {
   width: 255px;
   height: 58px;
@@ -40,7 +47,6 @@ fieldset {
   color: $dark;
 
   margin-left: -11px;
-
 }
 
 .contest-form__legend {
@@ -51,6 +57,10 @@ fieldset {
   color: $lipstick;
   text-transform: uppercase;
   width: 217px;
+
+    &--platform {
+      margin-bottom: 40px;
+    }
 }
 
 .contest-form__user-data-fieldset {
@@ -94,11 +104,74 @@ fieldset {
   }
 
   .contest-form__achievment-fieldset {
-
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 28px;
     padding-top: 38px;
-    padding-bottom: 44px;
+    padding-bottom: 46px;
     background-color: $light-grey;
 
+  }
+
+  .contest-form__user-contacts-fieldset {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .contest-form__user-platform {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 40px;
+    padding-top: 38px;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 46px;
+    background-color: $light-grey;
+  }
+
+  .contest-form__radio-input {
+    
+    @include visually-hidden;
+    position: relative;
+    left: 10px;
+
+
+    &:before {
+      content: "";
+      top: -27px;
+      left: -10px;
+      position: absolute;
+      width: 37px;
+      height: 37px;
+      border-radius: 50%;
+      border: solid 2px #e5e5e5;
+      background-color: $white;
+    }
+
+    &:checked{  
+      &:after{ 
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        background-color: $lipstick;
+        border-radius: 50%;
+        top: -15px;
+        left: 3px;
+      }
+    }
+  }
+
+  .contest-form__radio-label {
+      font-size: 18px;
+      line-height: 1.67;
+      text-align: left;
+      color: $dark;  
+      padding-left: 70px;
   }
 
   .contest-form__field {
@@ -120,3 +193,10 @@ fieldset {
     padding-left: 65px;
   }
 
+  .contest-form__radio-field {
+    margin-bottom: 44px;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }

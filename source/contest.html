@@ -52,14 +52,16 @@
               <input class="contest-form__text-input" type="text" name="user-second-name" id="user-second-name"
                 placeholder="Укажите фамилию *" required>
             </div>
-            <div class="contest-form__field"></div>
-            <label class="contest-form__text-label" for="user-name">Имя:</label>
-            <input class="contest-form__text-input" type="text" name="user-name" id="user-name"
-              placeholder="Введите ваше имя *" required>
-            <div class="contest-form__field"></div>
-            <label class="contest-form__text-label" for="user-middle-name">Отчество:</label>
-            <input class="contest-form__text-input" type="text" name="user-middle-name" id="user-middle-name"
-              placeholder="Ну и отчество тоже">
+            <div class="contest-form__field">
+              <label class="contest-form__text-label" for="user-name">Имя:</label>
+              <input class="contest-form__text-input" type="text" name="user-name" id="user-name"
+                placeholder="Введите ваше имя *" required>
+            </div>
+            <div class="contest-form__field">
+              <label class="contest-form__text-label" for="user-middle-name">Отчество:</label>
+              <input class="contest-form__text-input" type="text" name="user-middle-name" id="user-middle-name"
+                placeholder="Ну и отчество тоже">
+            </div>
           </fieldset>
       </div>
       <fieldset class="contest-form__achievment-fieldset">
@@ -91,26 +93,42 @@
           </div>
         </div>
       </fieldset>
-      <fieldset class="contest-form__user-contacts-fieldset">
-        <label class="contest-form__text-label" for="user-phone">Номер телефона</label>
-        <input class="contest-form__text-input" type="tel" name="user-phone" id="user-phone"
-          placeholder="Номер, пожалуйста">
-        <label class="contest-form__text-label" for="user-email">Адрес почты</label>
-        <input class="contest-form__text-input" type="email" name="user-email" id="user-email"
-          placeholder="Введите почту *" required>
+      <div class="container">
+        <fieldset class="contest-form__user-contacts-fieldset">
+          <div class="contest-form__field">
+            <label class="contest-form__text-label" for="user-phone">Номер телефона</label>
+            <input class="contest-form__text-input" type="tel" name="user-phone" id="user-phone"
+              placeholder="Номер, пожалуйста">
+          </div>
+          <div class="contest-form__field">
+            <label class="contest-form__text-label" for="user-email">Адрес почты</label>
+            <input class="contest-form__text-input" type="email" name="user-email" id="user-email"
+              placeholder="Введите почту *" required>
+          </div>
+      </div>
       </fieldset>
       <fieldset class="contest-form__user-platform">
-        <legend class="contest-form__legend">С каким приложением путешествовали?</legend>
-        <input class="contest-form__radio-input" type="radio" id="user-platform-ios" name="user-platform" value="ios"
-          checked>
-        <label class="contest-form__text-label" for="user-platform-android">Pink для iOS</label>
-        <input class="contest-form__radio-input" type="radio" id="user-platform-android" name="user-platform"
-          value="android">
-        <label class="contest-form__text-label" for="user-platform-winphone">Pink на Android</label>
-        <input class="contest-form__radio-input" type="radio" id="user-platform-winphone" name="user-platform"
-          value="windows-phone">
-        <label class="contest-form__text-label" for="user-platform-winphone">Windows Phone</label>
+        <div class="container">
+          <div class="contest-form__checkbox-field">
+            <legend class="contest-form__legend contest-form__legend--platform">С каким приложением путешествовали?</legend>
+            <div class="contest-form__radio-field">
+              <input class="contest-form__radio-input" type="radio" id="user-platform-ios" name="user-platform"
+                value="ios" checked>
+              <label class="contest-form__radio-label" for="user-platform-android">Pink для iOS</label>
+            </div>
+            <div class="contest-form__radio-field">
+              <input class="contest-form__radio-input" type="radio" id="user-platform-android" name="user-platform"
+                value="android">
+              <label class="contest-form__radio-label" for="user-platform-winphone">Pink на Android</label>
+            </div>
+            <div class="contest-form__radio-field">
+              <input class="contest-form__radio-input" type="radio" id="user-platform-winphone" name="user-platform"
+                value="windows-phone">
+              <label class="contest-form__radio-label" for="user-platform-winphone">Windows Phone</label>
+            </div>
+          </div>
       </fieldset>
+      </div>
       <fieldset class="contest-form__user-experience">
         <legend class="contest-form__legend">Опишите свои эмоции</legend>
         <textarea class="contest_form__text-area" placeholder="Можно прям в красках, не стесняясь в выражениях"
