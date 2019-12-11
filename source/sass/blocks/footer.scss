@@ -1,3 +1,8 @@
+.footer__logo,
+  .social-links-list {
+    margin: 0;
+  }
+  
 .footer__container {
   @include container;
 
@@ -15,12 +20,30 @@
 
 .footer__logo {
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 42px;
 }
 
-.social-links-list,
-.footer__developed {
+.social-links-list {
+  margin: 0 auto 40px;
+}
+
+.footer__developer {
+  width: 128px;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: left;
+  color: $dark;
   margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__developer-logo {
+  padding-top: 3px;
+  margin-left: 14px;
+
 }
 
 @media (min-width: $tablet-width) {
@@ -32,11 +55,5 @@
     flex-direction: row;
     min-height: 127px;
     padding-top: 36px;
-  }
-
-  .footer__logo,
-  .footer__developed,
-  .social-links-list {
-    margin: 0;
   }
 }

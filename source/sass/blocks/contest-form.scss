@@ -1,3 +1,7 @@
+.contest-form {
+margin-bottom: 55px;
+}
+
 .contest-form__promotext {
   
   line-height: 2.14;
@@ -60,6 +64,10 @@ fieldset {
 
     &--platform {
       margin-bottom: 40px;
+    }
+
+    &--user-experience {
+      margin-bottom: 15px;
     }
 }
 
@@ -200,3 +208,56 @@ fieldset {
       margin-bottom: 0;
     }
   }
+
+.contest-form__user-experience {
+  padding: 0;
+  margin: 0;  
+  text-align: center;
+}
+
+.contest-form__text-area {
+  box-sizing: border-box;
+  width: 280px;
+  height: 200px;
+  padding-left: 19px;
+  padding-right: 19px;
+  border: solid 2px #e5e5e5;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-size: 18px;
+  line-height: 1.67;
+  text-align: left;
+  color: $dark;
+  margin-bottom: 45px;
+}
+
+.contest-form__submit-button {
+  width: 280px;
+  height: 62px;
+  padding: 0;
+  border: solid 2px #2aab6d;
+  background-color: #2aab6d;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.67;
+  text-align: center;
+  color: $white;
+  text-transform: uppercase;
+  border-radius: 3px;
+  margin-bottom: 35px;
+}
+
+.contest-form__note {
+  font-size: 14px;
+  line-height: 2.14;
+  text-align: center;
+  color: $dark;
+  display: block;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+
+.lipstick {
+  color: $lipstick;
+}
+

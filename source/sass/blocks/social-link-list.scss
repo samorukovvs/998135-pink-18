@@ -4,14 +4,29 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 178px;
+  width: 172px;
 }
 
 .social-links-list__item {
   width: 46px;
   height: 46px;
-
   background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 46px;
+      height: 46px;
+      left: -3px;
+      top: -2px;
+      opacity: 0.1;
+      border: solid 3px $dark;
+      border-radius: 50%;
+      background-color: #fefefe;
+    }
 }
 
 .social-links-list__item--twitter {

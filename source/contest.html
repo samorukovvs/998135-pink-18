@@ -110,7 +110,8 @@
       <fieldset class="contest-form__user-platform">
         <div class="container">
           <div class="contest-form__checkbox-field">
-            <legend class="contest-form__legend contest-form__legend--platform">С каким приложением путешествовали?</legend>
+            <legend class="contest-form__legend contest-form__legend--platform">С каким приложением путешествовали?
+            </legend>
             <div class="contest-form__radio-field">
               <input class="contest-form__radio-input" type="radio" id="user-platform-ios" name="user-platform"
                 value="ios" checked>
@@ -129,33 +130,38 @@
           </div>
       </fieldset>
       </div>
-      <fieldset class="contest-form__user-experience">
-        <legend class="contest-form__legend">Опишите свои эмоции</legend>
-        <textarea class="contest_form__text-area" placeholder="Можно прям в красках, не стесняясь в выражениях"
-          id="user-experience" name="user-experience"></textarea>
-      </fieldset>
-      <button type="submit">Отправить форму</button>
-      <span class="contest-form__note">* — обязательные поля</span>
-      </form>
+      <div class="container">
+        <fieldset class="contest-form__user-experience">
+          <legend class="contest-form__legend contest-form__legend--user-experience">Опишите свои эмоции</legend>
+          <textarea class="contest-form__text-area" placeholder="Можно прям в красках, не стесняясь в выражениях"
+            id="user-experience" name="user-experience"></textarea>
+        </fieldset>
+        <button class="contest-form__submit-button" type="submit">Отправить форму</button>
+        <span class="contest-form__note"><span class="lipstick">*</span> — обязательные поля</span>
+        </form>
+      </div>
     </section>
   </main>
   <footer>
-
-    <img class="footer__logo" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Пинк">
-    <ul class="social-links-list">
-      <li class="social-links-list__item social-links-list__item--twitter">
-        <a href="twitter.com" aria-label="Страница Пинк в Твиттере"></a>
-      </li>
-      <li class="social-links-list__item social-links-list__item--facebook">
-        <a href="twitter.com" aria-label="Страница Пинк в Фэйсбуке"></a>
-      </li>
-      <li class="social-links-list__item social-links-list__item--youtube">
-        <a href="twitter.com" aria-label="Страница Пинк в Ютуб"></a>
-      </li>
-    </ul>
-    <span class="footer__developer">Разработано</span>
-    <a class="footer__developer-logo" href="https://htmlacademy.ru/intensive/adaptive"><img
-        src="img/logo-htmlacademy.svg" alt="HTMLAcademy" width="27" height="24"></a>
+    <div class="container">
+      <img class="footer__logo" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Пинк">
+      <ul class="social-links-list">
+        <li class="social-links-list__item social-links-list__item--twitter">
+          <a href="twitter.com" aria-label="Страница Пинк в Твиттере"></a>
+        </li>
+        <li class="social-links-list__item social-links-list__item--facebook">
+          <a href="facebook.com" aria-label="Страница Пинк в Фэйсбуке"></a>
+        </li>
+        <li class="social-links-list__item social-links-list__item--youtube">
+          <a href="youtube.com" aria-label="Страница Пинк в Ютуб"></a>
+        </li>
+      </ul>
+      <div class="footer__developer">
+        <span>Разработано</span>
+        <a class="footer__developer-logo" href="https://htmlacademy.ru/intensive/adaptive"><img
+            src="img/logo-htmlacademy.svg" alt="HTMLAcademy" width="27" height="34"></a>
+      </div>
+    </div>
   </footer>
 </body>
 

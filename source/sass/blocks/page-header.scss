@@ -37,6 +37,13 @@
   padding-left: 20px;
 }
 
+@media (min-width: $tablet-width) {
+  .page-header__top {
+    min-height:111px;
+  }
+}
+
+
 @media (min-width: $desktop-width) {
   .page-header {
     position: absolute;
