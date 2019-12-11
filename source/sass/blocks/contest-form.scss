@@ -13,6 +13,10 @@ margin-bottom: 55px;
   font-size: 14px;
 }
 
+.contest-form__promotext--fill {
+  display: none;
+}
+
 fieldset {
   border: none;
 }
@@ -261,3 +265,41 @@ fieldset {
   color: $lipstick;
 }
 
+@media (min-width: $tablet-width) {
+  .contest-form {
+    padding-top: 92px;
+  }
+  .contest-form__user-data-fieldset {
+    margin: 0;
+    padding: 0;
+  }
+  .contest-form__promotext {
+    padding-top: 0;
+    width: 487px;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .contest-form__promotext--fill {
+    display: block;
+    margin-bottom: 70px;
+  }
+
+  .contest-form__field {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .contest-form__text-label {
+    padding-left: 0;
+  }
+
+  .contest-form__text-input {
+    margin-left: 20px;
+    width: 100%;
+
+  }
+}

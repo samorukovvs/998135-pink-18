@@ -44,17 +44,17 @@
 
 @media (min-width: $tablet-width) {
   .page-description {
-    min-height: 440px;
-
+    min-height: 328px;
     background-image: url("../../img/bg-back-tablet@1x.jpg");
+    padding-top: 40px;
   }
 
   .page-description__header {
-    width: 348px;
-
+    width: 490px;
+    font-size: 50px;
     font-weight: 300;
-    font-size: 40px;
-    text-align: center;
+    line-height: 60px;
+  
   }
 
   // .page-description__header--index {
