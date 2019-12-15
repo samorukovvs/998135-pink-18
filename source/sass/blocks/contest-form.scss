@@ -27,13 +27,17 @@ fieldset {
 
 .contest-form__form {
   width: 100%;
+  padding-top: 8px;
 }
 
 .contest-form__user-data-fieldset {
   display: flex;
   flex-direction: column;
-  margin: 0;
-  padding: 0;
+  padding: 0 0 40px 20px;
+
+  &-container {
+    @include container;
+  }
 }
 
 .contest-form__text-label {
@@ -71,7 +75,7 @@ fieldset {
 
 .contest-form__legend {
   width: 217px;
-  margin: 0 auto 42px;
+  margin: 0 auto 43px;
 
   font-size: 14px;
   line-height: 1.29;
@@ -80,16 +84,12 @@ fieldset {
   text-transform: uppercase;
 
   &--platform {
-    margin-bottom: 40px;
+    margin-bottom: 36px;
   }
 
   &--user-experience {
     margin-bottom: 15px;
   }
-}
-
-.contest-form__user-data-fieldset {
-  margin-bottom: 30px;
 }
 
 .contest-form__checkbox-label {
@@ -132,29 +132,24 @@ fieldset {
 }
 
 .contest-form__achievment-fieldset {
-  width: 100%;
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: 28px;
-  margin-left: 0;
-  padding-top: 38px;
-  padding-bottom: 46px;
+  margin: 0 0 28px;
+  padding: 38px 0 46px;
 
   background-color: $light-grey;
 }
 
+.fieldset-container {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .contest-form__user-contacts-fieldset {
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: 30px;
-  margin-left: 0;
+  margin: 0 0 30px 0;
+  padding-left: 30px;
 }
 
 .contest-form__user-platform {
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: 40px;
-  margin-left: 0;
+  margin: 0 0 40px;
   padding-top: 38px;
   padding-right: 0;
   padding-bottom: 46px;
@@ -219,6 +214,10 @@ fieldset {
 
 .contest-form__achievment-field {
   margin-bottom: 52px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .contest-form__checkbox-label {
@@ -226,7 +225,8 @@ fieldset {
 }
 
 .contest-form__radio-field {
-  margin-bottom: 44px;
+  margin-bottom: 45px;
+
 
   &:last-child {
     margin-bottom: 0;
@@ -259,9 +259,10 @@ fieldset {
 }
 
 .contest-form__submit-button {
+  display: block;
   width: 280px;
   height: 62px;
-  margin-bottom: 35px;
+  margin: 0 auto 35px;
   padding: 0;
 
   font-weight: bold;
@@ -293,14 +294,76 @@ fieldset {
 
 @media (min-width: $tablet-width) {
   .contest-form {
-    display: flex;
-    flex-wrap: wrap;
     padding-top: 92px;
   }
+
+  .contest-form__legend {
+    position: relative;
+    top: -10px;
+    left: 50%;
+
+    display: inline-block;
+    width: auto;
+    margin: 0;
+    padding: 0 32px;
+
+    vertical-align: top;
+
+    background-color: #ffffff;
+    transform: translateX(-50%);
+  }
+
+  .contest-form__user-data-fieldset-container {
+    margin-left: 0;
+  }
+
+  .fieldset-container {
+    width: 620px;
+    padding-top: 53px;
+    padding-bottom: 56px;
+
+    border: solid 2px #e5e5e5;
+  }
+  .contest-form__form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+  }
+
   .contest-form__user-data-fieldset {
+    order: 1;
+    width: 100%;
     margin: 0;
     padding: 0;
   }
+
+  .contest-form__achievment-fieldset {
+    order: 4;
+  }
+
+  .contest-form__user-contacts-fieldset {
+    order: 3;
+  }
+
+  .contest-form__user-platform {
+    order: 2;
+    width: 100%;
+
+    background-color: $white;
+  }
+
+  .contest-form__user-experience {
+    order: 5;
+  }
+
+  .contest-form__submit-button {
+    order: 6;
+  }
+
+  .contest-form__note {
+    order: 7;
+  }
+
   .contest-form__promotext {
     width: 487px;
     margin: 0 auto;
@@ -331,8 +394,44 @@ fieldset {
     width: 100%;
     margin-left: 20px;
   }
+}
+
+@media (min-width: $desktop-width) {
+  .contest-form__form {
+    flex-direction: row;
+  }
+
+  .contest-form__achievment-fieldset {
+    width: 435px;
+  }
+
+  .contest-form__user-data-fieldset {
+    width: 435px;
+    &-container {
+      width: 435px;
+    }
+  }
 
   .contest-form__user-platform {
-    order: 1;
+    width: 435px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .fieldset-container {
+    width: 435px;
+
+    background-color: $white;
+
+    &--big {
+      width: 936px;
+      min-height: 158px;
+
+      border: solid 2px #e5e5e5;
+    }
+  }
+
+  .contest-form__achievment-fieldset {
+    background-color: white;
   }
 }
