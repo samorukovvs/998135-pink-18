@@ -53,22 +53,22 @@
       <form class="contest-form__form" action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="contest-form__user-data-fieldset">
           <div class="contest-form__user-data-fieldset-container">
-          <div class="contest-form__field">
-            <label class="contest-form__text-label" for="user-second-name">Фамилия:</label>
-            <input class="contest-form__text-input" type="text" name="user-second-name" id="user-second-name"
-              placeholder="Укажите фамилию *" required>
+            <div class="contest-form__field">
+              <label class="contest-form__text-label" for="user-second-name">Фамилия:</label>
+              <input class="contest-form__text-input" type="text" name="user-second-name" id="user-second-name"
+                placeholder="Укажите фамилию *" required>
+            </div>
+            <div class="contest-form__field">
+              <label class="contest-form__text-label" for="user-name">Имя:</label>
+              <input class="contest-form__text-input" type="text" name="user-name" id="user-name"
+                placeholder="Введите ваше имя *" required>
+            </div>
+            <div class="contest-form__field">
+              <label class="contest-form__text-label" for="user-middle-name">Отчество:</label>
+              <input class="contest-form__text-input" type="text" name="user-middle-name" id="user-middle-name"
+                placeholder="Ну и отчество тоже">
+            </div>
           </div>
-          <div class="contest-form__field">
-            <label class="contest-form__text-label" for="user-name">Имя:</label>
-            <input class="contest-form__text-input" type="text" name="user-name" id="user-name"
-              placeholder="Введите ваше имя *" required>
-          </div>
-          <div class="contest-form__field">
-            <label class="contest-form__text-label" for="user-middle-name">Отчество:</label>
-            <input class="contest-form__text-input" type="text" name="user-middle-name" id="user-middle-name"
-              placeholder="Ну и отчество тоже">
-          </div>
-        </div>
         </fieldset>
         <fieldset class="contest-form__achievment-fieldset">
           <div class="fieldset-container fieldset-container--big">
@@ -100,13 +100,13 @@
           </div>
         </fieldset>
         <fieldset class="contest-form__user-contacts-fieldset">
-          <div class="fieldset-container fieldset-container--big">
-            <div class="contest-form__field">
+          <div class="fieldset-container fieldset-container--big fieldset-container--contacts">
+            <div class="contest-form__field contest-form__field--contacts">
               <label class="contest-form__text-label" for="user-phone">Номер телефона</label>
               <input class="contest-form__text-input" type="tel" name="user-phone" id="user-phone"
                 placeholder="Номер, пожалуйста">
             </div>
-            <div class="contest-form__field">
+            <div class="contest-form__field contest-form__field--contacts">
               <label class="contest-form__text-label" for="user-email">Адрес почты</label>
               <input class="contest-form__text-input" type="email" name="user-email" id="user-email"
                 placeholder="Введите почту *" required>
@@ -143,8 +143,12 @@
               id="user-experience" name="user-experience"></textarea>
           </div>
         </fieldset>
-        <button class="contest-form__submit-button" type="submit">Отправить форму</button>
-        <span class="contest-form__note"><span class="lipstick">*</span> — обязательные поля</span>
+        <div class="contest-form__submit-area">
+          <div class="container">
+            <button class="contest-form__submit-button" type="submit">Отправить форму</button>
+            <span class="contest-form__note"><span class="lipstick">*</span> — обязательные поля</span>
+          </div>
+        </div>
       </form>
     </section>
   </main>
