@@ -95,6 +95,7 @@
 
 @media (min-width: $desktop-width) {
   .download-app {
+    margin-top: 0;
     padding-top: 18px;
     padding-left: 130px;
   }
@@ -107,6 +108,7 @@
   .download-app__download-button {
     width: 300px;
     height: 56px;
+    margin-bottom: 65px;
 
     font-size: 21px;
     line-height: 18px;
@@ -125,5 +127,13 @@
   .download-app__download-list {
     margin-top: 65px;
     margin-bottom: 56px;
+  }
+
+  .page-description--index {
+    margin-bottom: 32px;
+  }
+
+  .download-app__download-list {
+    margin-top: 0;
   }
 }

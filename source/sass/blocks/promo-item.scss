@@ -22,6 +22,10 @@
   color: #000000;
 }
 
+.promo-item__image {
+  display: none;
+}
+
 
 @media (min-width: $tablet-width) {
   .promo-item__header {
@@ -30,5 +34,27 @@
 
   .promo-item__text {
     text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo-item__header {
+    margin-bottom: 24px;
+
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .promo-item__text {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: $dark;
+  }
+
+  .promo-item__image {
+    margin-bottom: 55px;
   }
 }

@@ -8,21 +8,12 @@
 
 @media (min-width: $desktop-width) {
   .description-download {
-    min-height: 888px;
+    min-height: 853px;
+    margin-bottom: 67px;
 
-    background-image: url("../../img/bg-back-desktop@1x.jpg");
+    background-image: url("../../img/iphone-hand-desktop@1x.png"), url("../../img/bg-back-desktop@1x.jpg");
     background-repeat: no-repeat;
-    background-position: 50% bottom;
-    background-size: cover;
-    // background-size: 2560px auto;
-
-    // &::after {
-    //   content: "";
-
-    //   width: 1050px;
-
-    //   background-image: url("../../img/iphone-hand-desktop@1x.png;");
-    //   background-size: 1050px auto;
-    // }
+    background-position: 98% bottom, center top;
+    background-size: auto, cover;
   }
 }
