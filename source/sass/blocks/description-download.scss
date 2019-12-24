@@ -1,8 +1,11 @@
 @media (min-width: $tablet-width) {
   .description-download {
-    min-height: 619px;
+    min-height: 617px;
 
-    background-image: url("../../img/bg-back-tablet@1x.jpg");
+    background-image: url("../../img/iphone-hand-tablet@1x.png"), url("../../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 48% bottom, center top;
+    background-size: auto, cover;
   }
 }
 
@@ -12,8 +15,5 @@
     margin-bottom: 67px;
 
     background-image: url("../../img/iphone-hand-desktop@1x.png"), url("../../img/bg-back-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: 98% bottom, center top;
-    background-size: auto, cover;
   }
 }

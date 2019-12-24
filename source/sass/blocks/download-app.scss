@@ -87,9 +87,31 @@
 
 @media (min-width: $tablet-width) {
   .download-app {
-    margin-top: 38px;
+    padding-top: 0;
+    padding-bottom: 0;
 
     background-color: transparent;
+  }
+
+  .download-app__container {
+    align-items: flex-start;
+  }
+
+  .download-app__download-button {
+    width: 300px;
+    margin-bottom: 43px;
+  }
+
+  .download-app__download-list {
+    margin-bottom: 39px;
+  }
+
+  .download-app__platform-available {
+    width: 300px;
+
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
   }
 }
 

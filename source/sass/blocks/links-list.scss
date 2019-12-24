@@ -76,6 +76,12 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .links-list__item::after {
+    bottom: 1px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .links-list__item a {
     font-weight: 400;

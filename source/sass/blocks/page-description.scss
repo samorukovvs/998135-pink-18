@@ -43,18 +43,31 @@
 
 @media (min-width: $tablet-width) {
   .page-description {
-    min-height: 328px;
+    min-height: auto;
     padding-top: 40px;
 
-    background-image: url("../../img/bg-back-tablet@1x.jpg");
+    &--index {
+      margin-bottom: 30px;
+
+      background-image: none;
+    }
+  }
+
+  .page-description__container--main {
+    padding-top: 49px;
   }
 
   .page-description__header {
     width: 490px;
 
     font-weight: 300;
-    font-size: 50px;
-    line-height: 60px;
+    font-size: 40px;
+    line-height: 49px;
+
+    &--index {
+      width: 186px;
+      margin-left: 54px;
+    }
   }
 }
 
@@ -67,8 +80,6 @@
 
   .page-description--index {
     padding-top: 219px;
-
-    background-image: none;
   }
 
   .page-description__header {
