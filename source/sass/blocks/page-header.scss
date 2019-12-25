@@ -65,10 +65,11 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 30px;
   }
 
   .page-header__top {
     width: auto;
+    min-height: auto;
+    padding-top: 0;
   }
 }

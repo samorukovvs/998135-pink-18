@@ -84,6 +84,9 @@
 
 @media (min-width: $desktop-width) {
   .links-list__item a {
+    height: auto;
+    padding-top: 0;
+
     font-weight: 400;
     font-size: 18px;
     line-height: 18px;
@@ -96,6 +99,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
     margin-right: 0;
 
     &::after {
@@ -105,6 +109,7 @@
 
   .links-list__item {
     width: auto;
+    min-height: auto;
 
     background-color: none;
 

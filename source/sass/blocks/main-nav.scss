@@ -4,6 +4,8 @@
 
 @media (min-width: $desktop-width) {
   .main-nav {
+    display: flex;
+    align-items: center;
     width: 620px;
   }
 }
