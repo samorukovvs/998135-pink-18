@@ -12,8 +12,11 @@
 
 @media (min-width: $tablet-width) {
   .advice-to-user {
+    margin-bottom: 0;
+
     font-weight: 300;
     font-size: 40px;
+    line-height: 49px;
     text-align: center;
   }
 }

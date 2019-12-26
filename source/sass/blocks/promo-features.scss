@@ -33,6 +33,12 @@
 
 
 @media (min-width: $tablet-width) {
+  .promo-features {
+    padding-top: 47px;
+  }
+
+
+
   .promo-features__container {
     width: $tablet-container-width;
   }
